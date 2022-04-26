@@ -1,0 +1,25 @@
+/* 
+
+This file containes reusable functions,
+
+Mixins allow you to create reusable functions. 
+To declare a function you must enter 
+@mixin name_fonction { content } 
+or if your function has a parameter, you must enter 
+@mixin name_fonction($name_variable) { content }
+
+*/
+
+@mixin flex-center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* $radius is the parameter of the function */
+
+@mixin border-radius($radius) {
+    -webkit-border-radius: $radius;
+    -moz-border-radius: $radius;
+    border-radius: $radius;    
+}
